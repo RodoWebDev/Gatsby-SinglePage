@@ -12,13 +12,18 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import Footer from "./footer"
 // eslint-disable-next-line
-import Icofont from 'react-icofont';
-import 'boxicons';
+
+if (typeof window !== `undefined`) {
+  const boxicons = require("boxicons")
+  const reactIcoFont = require("react-icofont")
+}
+
 import "./style.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
