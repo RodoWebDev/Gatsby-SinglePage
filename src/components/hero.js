@@ -1,9 +1,11 @@
 import React from "react"
 import Typing from "react-typing-animation";
 
+import heroBackground from '../static/images/hero-bg.jpg';
+
 const HeroSection = () => {
     return (
-      <section className="hero d-flex flex-column justify-content-center align-items-center">
+      <section className="hero d-flex flex-column justify-content-center align-items-center" style={{backgroundImage:  `url(${heroBackground})`}}>
       <div className="hero-container" data-aos="fade-in">
         <h1>Alex Smith</h1>
         <div className="before_word">I'm<i> </i>

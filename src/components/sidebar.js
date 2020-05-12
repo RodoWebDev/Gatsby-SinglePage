@@ -1,7 +1,9 @@
 import React from "react"
 import {Helmet} from "react-helmet";
 
-const Header = () => (
+import profileImg from '../static/images/profile-img.jpg';
+
+const Sidebar = () => (
   <header
     className="header"
   >
@@ -12,7 +14,7 @@ const Header = () => (
     </Helmet>
     <div className="header_container">
       <div className="profile">
-        <img src="img/profile-img.jpg" alt="" className="img-fluid rounded-circle" />
+        <img src={profileImg} alt="" className="img-fluid rounded-circle" />
         <h1 className="text-light"><a href="index.html">Alex Smith</a></h1>
         <div className="social-links">
           <a href="/#" className="twitter"><i className="bx bxl-twitter"></i></a>
@@ -37,4 +39,4 @@ const Header = () => (
   </header>
 )
 
-export default Header
+export default Sidebar

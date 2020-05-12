@@ -9,14 +9,8 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
+import Sidebar from "./sidebar"
 import Footer from "./footer"
-// eslint-disable-next-line
-
-if (typeof window !== `undefined`) {
-  const boxicons = require("boxicons")
-  const reactIcoFont = require("react-icofont")
-}
 
 import "./style.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -24,6 +18,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+/*eslint-disable*/
+
+if (typeof window !== `undefined`) {
+  const boxicons = require("boxicons")
+  const reactIcoFont = require("react-icofont")
+}
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -38,7 +38,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Sidebar siteTitle={data.site.siteMetadata.title} />
       <div>
         <main>{children}</main>
         <footer>

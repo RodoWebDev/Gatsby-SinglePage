@@ -11,7 +11,7 @@ import ServicesSection from "../components/services";
 import HeroSection from "../components/hero";
 import ContactSection from "../components/contact";
 
-const IndexPage = () => {  
+const IndexPage = () => { 
   return (
   <Layout>
     <SEO title="Home" />    
