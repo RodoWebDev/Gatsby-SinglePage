@@ -1,5 +1,6 @@
 import React from "react"
 import Bounce from 'react-reveal/Bounce';
+import profileImg from '../static/images/profile-img.jpg';
 
 const AboutSection = () => {
     return (
@@ -12,7 +13,7 @@ const AboutSection = () => {
         <div className="row">
           <Bounce left>
             <div className="col-lg-4" data-aos="fade-right">
-              <img src="img/profile-img.jpg" className="img-fluid" alt=""/>
+              <img src={profileImg} className="img-fluid" alt=""/>
             </div>
           </Bounce>
           <Bounce right>
