@@ -1,4 +1,5 @@
 import React from "react"
+import {TinyButton as ScrollUpButton} from "react-scroll-up-button";
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import TestimonialSection from "../components/testimonial";
@@ -26,6 +27,18 @@ const IndexPage = () => {
       <TestimonialSection />
       <ContactSection />
     </div>
+    <ScrollUpButton 
+      style={{
+        width: 40,
+        height: 40,
+        background: '#149ddd',
+        border: '10px solid #149ddd',
+        borderRadius: '50%',
+        fill: '#fff',
+        right: 15,
+        bottom: 15
+      }}
+    />
   </Layout>
   );
 };

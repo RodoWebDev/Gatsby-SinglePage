@@ -1192,6 +1192,19 @@ a {
   font-family: "Poppins", sans-serif;
 }
 
+main aside svg {
+  margin-bottom: 15px;
+}
+
+main aside:hover {
+  background: #2eafec !important;
+  border: 10px solid #2eafec !important;
+}
+
+main aside:focus {
+  outline: none;
+}
+
 @media (min-width: 576px) {
 
   .container,
