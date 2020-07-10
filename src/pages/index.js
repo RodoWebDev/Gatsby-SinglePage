@@ -22,7 +22,7 @@ const IndexPage = () => {
       <FactsSection />
       <SkillsSection />
       <ResumeSection />
-      < PortfolioSection/>     
+      <PortfolioSection/>     
       <ServicesSection />
       <TestimonialSection />
       <ContactSection />
